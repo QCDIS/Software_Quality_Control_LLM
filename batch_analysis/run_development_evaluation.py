@@ -12,12 +12,13 @@ from collections.abc import Mapping, Sequence
 import numbers
 import re
 from collections import defaultdict
+from statistics import fmean
 
 
 
 
 # --- Configuration ---
-base_dir = "/home/nafis/Development/jupyter-quality-extension/11_envri_validation_set"  
+base_dir = "/home/nafis/Development/Software_Quality_Control_LLM/11_envri_validation_set"  
 selected_stage = "Development"  
 
 parent_dir = os.path.dirname(base_dir) # Get parent directory of base_dir
@@ -233,8 +234,9 @@ def clean_parsed_results(parsed_results):
 
 
 # Go through all projects in base_dir
+global_results = defaultdict(list)
 for project in os.listdir(base_dir):
-    global_results = {}
+    
     project_path = os.path.join(base_dir, project)
     if not os.path.isdir(project_path):
         continue
@@ -441,12 +443,20 @@ for project in os.listdir(base_dir):
     # Average of all projects
     print("Printing local results ", local_results)
     print(local_results)
+    averages = {key: fmean(vals) for key, vals in local_results.items() if vals}
+    print("printing averages ", averages)
+    for key, avg in averages.items():
+        global_results.setdefault(key, []).append(avg)
+
+    print("Global result ...", global_results)
+
        
         
 
 
-
-
+global_averages = {key: fmean(vals) for key, vals in global_results.items() if vals}
+print("FINALLY ")
+print("Global averge ", global_averages)
 # --- Save final results ---
 with open(output_file, "w", encoding="utf-8") as f:
     json.dump(summary_results, f, indent=2)

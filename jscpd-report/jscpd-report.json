@@ -1,12 +1,12 @@
 {
   "statistics": {
-    "detectionDate": "2025-11-12T16:22:28.115Z",
+    "detectionDate": "2025-11-12T16:59:58.551Z",
     "formats": {
       "python": {
         "sources": {
-          "/home/nafis/Development/jupyter-quality-extension/11_envri_validation_set/wine-classification-rfc/src/wine_classification_rfc.py": {
-            "lines": 105,
-            "tokens": 962,
+          "/home/nafis/Development/Software_Quality_Control_LLM/11_envri_validation_set/wine-classification-rfc/src/wine_classification_rfc.py": {
+            "lines": 341,
+            "tokens": 2745,
             "sources": 1,
             "clones": 0,
             "duplicatedLines": 0,
@@ -18,8 +18,8 @@
           }
         },
         "total": {
-          "lines": 105,
-          "tokens": 962,
+          "lines": 341,
+          "tokens": 2745,
           "sources": 1,
           "clones": 0,
           "duplicatedLines": 0,
@@ -32,8 +32,8 @@
       }
     },
     "total": {
-      "lines": 105,
-      "tokens": 962,
+      "lines": 341,
+      "tokens": 2745,
       "sources": 1,
       "clones": 0,
       "duplicatedLines": 0,

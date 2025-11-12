@@ -7,65 +7,112 @@
       },
       "Software Size (LoC)": {
         "status": "pass",
-        "loc": 1007,
-        "message": "1007 lines of code in the project Medium project size."
+        "loc": 676,
+        "message": "676 lines of code in the project Small project size."
       },
       "Code Duplication": {
         "status": "pass",
         "percentage": 0.0,
         "duplicated_lines": 0,
-        "total_lines": 1374,
+        "total_lines": 919,
         "message": "Code Duplication Percentage: 0"
       },
       "Percentage of Assertions": {
         "status": "fail",
-        "message": "Assertions found: 1"
+        "message": "Assertions found: 0"
       }
     },
-    "/home/nafis/Development/jupyter-quality-extension/11_envri_validation_set/Glassid-Classification-/Glass classification.py": {
+    "/home/nafis/Development/Software_Quality_Control_LLM/11_envri_validation_set/Glassid-Classification-/Glass classification.py": {
       "Code Smells": {
         "status": "fail",
-        "message": "Your code has been rated at 8.43/10 (previous run: 8.43/10, +0.00)"
+        "message": "Your code has been rated at 8.19/10 (previous run: 8.19/10, +0.00)"
       },
       "Maintainability Index": {
         "status": "pass",
-        "score": 34.58182261158828,
+        "score": 55.286047212214136,
         "grade": "A",
-        "message": "MI Score: 34.58, Grade: A Very high maintainability."
+        "message": "MI Score: 55.29, Grade: A Very high maintainability."
       },
       "Cyclomatic Complexity": {
         "status": "pass",
-        "score": 2.604651162790698,
+        "score": 2.55,
         "rank": "B",
-        "message": "Avg. Cyclomatic Complexity: 2.60, Worst Rank: B Low complexity \u2013 stable and structured."
+        "message": "Avg. Cyclomatic Complexity: 2.55, Worst Rank: B Low complexity \u2013 stable and structured."
       },
       "Comment Density": {
         "status": "fail",
-        "density": 12.035398230088495,
-        "message": "Comment Density: 12.04% Low comment density \u2013 consider adding more documentation."
+        "density": 13.405797101449277,
+        "message": "Comment Density: 13.41% Low comment density \u2013 consider adding more documentation."
       }
     },
-    "/home/nafis/Development/jupyter-quality-extension/11_envri_validation_set/Glassid-Classification-/Glass identification.py": {
+    "/home/nafis/Development/Software_Quality_Control_LLM/11_envri_validation_set/Glassid-Classification-/Glass identification.py": {
       "Code Smells": {
         "status": "fail",
-        "message": "Your code has been rated at 8.10/10 (previous run: 8.33/10, -0.23)"
+        "message": "Your code has been rated at 7.84/10 (previous run: 7.80/10, +0.04)"
       },
       "Maintainability Index": {
         "status": "pass",
-        "score": 41.96583428060911,
+        "score": 45.17448294015276,
         "grade": "A",
-        "message": "MI Score: 41.97, Grade: A Very high maintainability."
+        "message": "MI Score: 45.17, Grade: A Very high maintainability."
       },
       "Cyclomatic Complexity": {
         "status": "pass",
-        "score": 2.292682926829268,
-        "rank": "B",
-        "message": "Avg. Cyclomatic Complexity: 2.29, Worst Rank: B Low complexity \u2013 stable and structured."
+        "score": 3.227272727272727,
+        "rank": "C",
+        "message": "Avg. Cyclomatic Complexity: 3.23, Worst Rank: C Moderate complexity \u2013 slightly complex."
       },
       "Comment Density": {
         "status": "fail",
-        "density": 12.093023255813954,
-        "message": "Comment Density: 12.09% Low comment density \u2013 consider adding more documentation."
+        "density": 9.565217391304348,
+        "message": "Comment Density: 9.57% Low comment density \u2013 consider adding more documentation."
+      }
+    }
+  },
+  "wine-classification-rfc": {
+    "Project-Level Results": {
+      "Dependency Management": {
+        "status": "fail",
+        "message": "requirements.txt not found. Cannot validate dependencies."
+      },
+      "Software Size (LoC)": {
+        "status": "pass",
+        "loc": 253,
+        "message": "253 lines of code in the project Small project size."
+      },
+      "Code Duplication": {
+        "status": "pass",
+        "percentage": 0.0,
+        "duplicated_lines": 0,
+        "total_lines": 341,
+        "message": "Code Duplication Percentage: 0"
+      },
+      "Percentage of Assertions": {
+        "status": "fail",
+        "message": "Assertions found: 0"
+      }
+    },
+    "/home/nafis/Development/Software_Quality_Control_LLM/11_envri_validation_set/wine-classification-rfc/src/wine_classification_rfc.py": {
+      "Code Smells": {
+        "status": "fail",
+        "message": "Your code has been rated at 8.49/10 (previous run: 8.46/10, +0.03)"
+      },
+      "Maintainability Index": {
+        "status": "pass",
+        "score": 49.18864068860338,
+        "grade": "A",
+        "message": "MI Score: 49.19, Grade: A Very high maintainability."
+      },
+      "Cyclomatic Complexity": {
+        "status": "pass",
+        "score": 2.5555555555555554,
+        "rank": "B",
+        "message": "Avg. Cyclomatic Complexity: 2.56, Worst Rank: B Low complexity \u2013 stable and structured."
+      },
+      "Comment Density": {
+        "status": "fail",
+        "density": 7.234042553191489,
+        "message": "Comment Density: 7.23% Low comment density \u2013 consider adding more documentation."
       }
     }
   }
