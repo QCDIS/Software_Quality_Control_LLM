@@ -1,55 +1,19 @@
 {
   "errors": [
     {
-      "filename": "./__init__.py",
+      "filename": "./SFT.py",
       "reason": "No such file or directory"
     },
     {
-      "filename": "./assertion_counter.py",
+      "filename": "./generate_code.py",
       "reason": "No such file or directory"
     },
     {
-      "filename": "./bandit_runner.py",
-      "reason": "No such file or directory"
-    },
-    {
-      "filename": "./dependency_checker.py",
-      "reason": "No such file or directory"
-    },
-    {
-      "filename": "./gitleaks_runner.py",
-      "reason": "No such file or directory"
-    },
-    {
-      "filename": "./howfairis_runner.py",
-      "reason": "No such file or directory"
-    },
-    {
-      "filename": "./jscpd_runner.py",
-      "reason": "No such file or directory"
-    },
-    {
-      "filename": "./loc_counter.py",
-      "reason": "No such file or directory"
-    },
-    {
-      "filename": "./modularity_checker.py",
-      "reason": "No such file or directory"
-    },
-    {
-      "filename": "./pylint_runner.py",
-      "reason": "No such file or directory"
-    },
-    {
-      "filename": "./radon_runner.py",
-      "reason": "No such file or directory"
-    },
-    {
-      "filename": "./unit_test_checker.py",
+      "filename": "./test_example.py",
       "reason": "No such file or directory"
     }
   ],
-  "generated_at": "2025-06-22T01:22:15Z",
+  "generated_at": "2025-11-12T12:55:04Z",
   "metrics": {
     "_totals": {
       "CONFIDENCE.HIGH": 0,

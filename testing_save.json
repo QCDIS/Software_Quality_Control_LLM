@@ -1,0 +1,26 @@
+{
+  "Project-Level Results": {
+    "FAIR Assessment (howfairis)": {
+      "status": "fail",
+      "message": "<div style='margin-left: 20px; font-size: 90%; color: gray;'><div style='font-family: monospace; white-space: pre;'>/home/nafis/miniconda3/envs/quality/lib/python3.13/site-packages/docutils/utils/code_analyzer.py:12: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools&lt;81.</div><div style='font-family: monospace; white-space: pre;'>  from pkg_resources import DistributionNotFound as ResourceError</div></div><div style='margin-left: 20px; color: gray; font-size: 90%;'><br><i>This FAIR assessment checks your repository against 5 best practices from <a href='https://fair-software.eu/recommendations/checklist' target='_blank'>fair-software.eu</a>: open repository, license file, registry presence (e.g., PyPI), citation metadata, and a FAIR checklist badge in the README.</i></div><div style='margin-left: 20px; color: gray; font-size: 90%;'><b>Tip:</b> To improve FAIR compliance, make sure your repository is public, includes a license, and optionally adds a <code>CITATION.cff</code> file or publishes the software to a registry like PyPI. Adding the FAIR checklist badge to your <code>README.md</code> shows commitment to good research software practices.</div>"
+    },
+    "-----divider-1-----": {
+      "status": "pass",
+      "message": ""
+    },
+    "Leaked Secrets Scan (Gitleaks)": {
+      "status": "fail",
+      "message": "Exception during Gitleaks scan: [Errno 2] No such file or directory: 'gitleaks'"
+    },
+    "-----divider-2-----": {
+      "status": "pass",
+      "message": ""
+    },
+    "Security Vulnerability Scan (Bandit)": {
+      "status": "pass",
+      "message": "<div style='margin-left: 20px;'>✓ No medium or high-severity security vulnerabilities found.</div><div style='margin-left: 20px; color: gray; font-size: 90%;'><i>No medium or high-severity risks detected, only low-severity suggestions shown below.</i></div><div style='margin-left: 20px; color: gray; font-size: 90%;'></div><div style='margin-left: 20px; color: gray; font-size: 90%;'><b>Tip:</b> Focus on resolving MEDIUM and HIGH severity issues first. Watch for risky constructs like subprocess calls, use of eval, or hardcoded secrets. Even LOW severity findings may require attention in sensitive applications.</div><div style='margin-left: 20px; color: gray; font-size: 90%;'><i>Note: Bandit detects security vulnerabilities in Python code using static analysis. Each issue is ranked as LOW, MEDIUM, or HIGH based on severity.</i></div>"
+    }
+  },
+  "test_notebooks/SFT.py": {},
+  "test_notebooks/generate_code.py": {}
+}

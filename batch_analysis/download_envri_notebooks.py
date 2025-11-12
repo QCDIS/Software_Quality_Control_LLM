@@ -19,7 +19,7 @@ SEARCH_TERM = "forest"
 NUM_PAGES = 43
 
 # My local directory to store download notebooks
-output_dir = "/Users/yt/Documents/folder2024/course/Thesis/11_envri_validation_set"
+output_dir = "/home/nafis/Development/jupyter-quality-extension/11_envri_validation_set"
 
 # Create the directory if it doesn't already exist
 os.makedirs(output_dir, exist_ok=True)
@@ -46,7 +46,7 @@ for page in range (1, NUM_PAGES + 1):
     # Loop through each hyperlink fuond on the page
     for link in links:
         href = link["href"].strip() # Get the href attribute and clean up whitespace
-
+        #print(href)
         # Check if it's a GitHub link (where the actual notebook code lives)
         if href.startswith("https://github.com/"):
             repo_url = href # This is the GitHub repo URL
@@ -69,6 +69,12 @@ for page in range (1, NUM_PAGES + 1):
                 downloaded += 1
             except subprocess.CalledProcessError as e:
                 print(f"× Failed to clone {repo_url}: {e}")
+
+            #print(repo_url)
+    # if downloaded > 1:
+    #     break
+
+            
 
 print(f"\n Finished! Total GitHub repositories cloned: {downloaded}")
 

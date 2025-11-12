@@ -1,97 +1,48 @@
 {
   "statistics": {
-    "detectionDate": "2025-06-23T15:58:09.409Z",
+    "detectionDate": "2025-11-12T16:22:28.115Z",
     "formats": {
       "python": {
         "sources": {
-          "/Users/yt/Documents/folder2024/course/Thesis/11_envri_validation_set_test/Campus-Forest-Carbon-Project/Baseline_Carbon_Stocks_v3.py": {
-            "lines": 99,
-            "tokens": 649,
+          "/home/nafis/Development/jupyter-quality-extension/11_envri_validation_set/wine-classification-rfc/src/wine_classification_rfc.py": {
+            "lines": 105,
+            "tokens": 962,
             "sources": 1,
-            "clones": 1,
-            "duplicatedLines": 47,
-            "duplicatedTokens": 181,
-            "percentage": 47.47,
-            "percentageTokens": 27.89,
-            "newDuplicatedLines": 0,
-            "newClones": 0
-          },
-          "/Users/yt/Documents/folder2024/course/Thesis/11_envri_validation_set_test/Campus-Forest-Carbon-Project/Gains_Losses_Monitoring_v3.py": {
-            "lines": 206,
-            "tokens": 1517,
-            "sources": 1,
-            "clones": 1,
-            "duplicatedLines": 47,
-            "duplicatedTokens": 181,
-            "percentage": 22.82,
-            "percentageTokens": 11.93,
+            "clones": 0,
+            "duplicatedLines": 0,
+            "duplicatedTokens": 0,
+            "percentage": 0,
+            "percentageTokens": 0,
             "newDuplicatedLines": 0,
             "newClones": 0
           }
         },
         "total": {
-          "lines": 305,
-          "tokens": 2166,
-          "sources": 2,
-          "clones": 1,
-          "duplicatedLines": 47,
-          "duplicatedTokens": 181,
-          "percentage": 15.41,
-          "percentageTokens": 8.36,
+          "lines": 105,
+          "tokens": 962,
+          "sources": 1,
+          "clones": 0,
+          "duplicatedLines": 0,
+          "duplicatedTokens": 0,
+          "percentage": 0,
+          "percentageTokens": 0,
           "newDuplicatedLines": 0,
           "newClones": 0
         }
       }
     },
     "total": {
-      "lines": 305,
-      "tokens": 2166,
-      "sources": 2,
-      "clones": 1,
-      "duplicatedLines": 47,
-      "duplicatedTokens": 181,
-      "percentage": 15.41,
-      "percentageTokens": 8.36,
+      "lines": 105,
+      "tokens": 962,
+      "sources": 1,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "duplicatedTokens": 0,
+      "percentage": 0,
+      "percentageTokens": 0,
       "newDuplicatedLines": 0,
       "newClones": 0
     }
   },
-  "duplicates": [
-    {
-      "format": "python",
-      "lines": 48,
-      "fragment": "#!/usr/bin/env python\n# coding: utf-8\n\n\n\n#To set up your workspace, use your specified filepath\n#Be sure to change all directory and file names to your own\n\n\n\n\n#Permit Google Colab to access files in google drive\n#Can either (1) mount using the following line of code or (2) set manually in left hand 'Files' panel if using Google Colaboratory\nfrom google.colab import drive\ndrive.mount('/content/drive')\n\n\n\n\n#Install packages \nget_ipython().system('pip install geopandas')\nget_ipython().system('pip install rasterio')\nget_ipython().system('pip install rasterstats')\nget_ipython().system('pip install rioxarray')\n\n\n\n\n#Import required libraries\n##Must be run each time session is started\nimport glob \nimport os \nimport ogr\nimport gdal, gdalconst \n\nimport rasterio as rio\nfrom rasterio.plot import show\nimport rasterstats \nimport rioxarray\nimport xarray\nfrom shapely.geometry import mapping\n\nimport numpy as np \nimport geopandas as gpd \nimport matplotlib.pyplot as plt\n\n\n# # Pre 2016 Monitoring",
-      "tokens": 0,
-      "firstFile": {
-        "name": "../../11_envri_validation_set_test/Campus-Forest-Carbon-Project/Gains_Losses_Monitoring_v3.py",
-        "start": 1,
-        "end": 48,
-        "startLoc": {
-          "line": 1,
-          "column": 1,
-          "position": 0
-        },
-        "endLoc": {
-          "line": 48,
-          "column": 24,
-          "position": 181
-        }
-      },
-      "secondFile": {
-        "name": "../../11_envri_validation_set_test/Campus-Forest-Carbon-Project/Baseline_Carbon_Stocks_v3.py",
-        "start": 1,
-        "end": 48,
-        "startLoc": {
-          "line": 1,
-          "column": 1,
-          "position": 0
-        },
-        "endLoc": {
-          "line": 48,
-          "column": 26,
-          "position": 181
-        }
-      }
-    }
-  ]
+  "duplicates": []
 }

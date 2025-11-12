@@ -2,6 +2,8 @@ import os
 import nbformat
 from nbconvert import PythonExporter
 from IPython.display import display, HTML
+from pathlib import Path
+
 
 def convert_notebooks_in_dir(root_dir):
     """
@@ -16,6 +18,10 @@ def convert_notebooks_in_dir(root_dir):
     if os.path.isfile(root_dir) and root_dir.endswith(".ipynb"):
         # Single file case
         _convert_notebook_file(root_dir)
+        
+
+        
+
     elif os.path.isdir(root_dir):
         # Directory case
         for dirpath, _, filenames in os.walk(root_dir):
@@ -27,12 +33,15 @@ def convert_notebooks_in_dir(root_dir):
                 if file.endswith(".ipynb") and not file.startswith("."):
                     notebook_path = os.path.join(dirpath, file)
                     _convert_notebook_file(notebook_path)
+                    
+                
     else:
         print(f"[WARNING] Path not found or not valid: {root_dir}")
 
 def _convert_notebook_file(notebook_path):
     """Helper to convert a single .ipynb notebook to a .py file"""
     py_path = os.path.splitext(notebook_path)[0] + ".py"
+    #print("notebook path", notebook_path)
     try:
         # Load notebook
         with open(notebook_path, "r", encoding="utf-8") as f:
@@ -50,6 +59,8 @@ def _convert_notebook_file(notebook_path):
 
         # Remove cell markers like "# In[2]:"
         remove_cell_markers(py_path)
+
+        os.remove(notebook_path)
 
     except Exception as e:
         print(f"[ERROR] Failed to convert {notebook_path}: {e}")

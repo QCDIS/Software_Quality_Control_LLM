@@ -1,0 +1,72 @@
+{
+  "Glassid-Classification-": {
+    "Project-Level Results": {
+      "Dependency Management": {
+        "status": "fail",
+        "message": "requirements.txt not found. Cannot validate dependencies."
+      },
+      "Software Size (LoC)": {
+        "status": "pass",
+        "loc": 1007,
+        "message": "1007 lines of code in the project Medium project size."
+      },
+      "Code Duplication": {
+        "status": "pass",
+        "percentage": 0.0,
+        "duplicated_lines": 0,
+        "total_lines": 1374,
+        "message": "Code Duplication Percentage: 0"
+      },
+      "Percentage of Assertions": {
+        "status": "fail",
+        "message": "Assertions found: 1"
+      }
+    },
+    "/home/nafis/Development/jupyter-quality-extension/11_envri_validation_set/Glassid-Classification-/Glass classification.py": {
+      "Code Smells": {
+        "status": "fail",
+        "message": "Your code has been rated at 8.43/10 (previous run: 8.43/10, +0.00)"
+      },
+      "Maintainability Index": {
+        "status": "pass",
+        "score": 34.58182261158828,
+        "grade": "A",
+        "message": "MI Score: 34.58, Grade: A Very high maintainability."
+      },
+      "Cyclomatic Complexity": {
+        "status": "pass",
+        "score": 2.604651162790698,
+        "rank": "B",
+        "message": "Avg. Cyclomatic Complexity: 2.60, Worst Rank: B Low complexity \u2013 stable and structured."
+      },
+      "Comment Density": {
+        "status": "fail",
+        "density": 12.035398230088495,
+        "message": "Comment Density: 12.04% Low comment density \u2013 consider adding more documentation."
+      }
+    },
+    "/home/nafis/Development/jupyter-quality-extension/11_envri_validation_set/Glassid-Classification-/Glass identification.py": {
+      "Code Smells": {
+        "status": "fail",
+        "message": "Your code has been rated at 8.10/10 (previous run: 8.33/10, -0.23)"
+      },
+      "Maintainability Index": {
+        "status": "pass",
+        "score": 41.96583428060911,
+        "grade": "A",
+        "message": "MI Score: 41.97, Grade: A Very high maintainability."
+      },
+      "Cyclomatic Complexity": {
+        "status": "pass",
+        "score": 2.292682926829268,
+        "rank": "B",
+        "message": "Avg. Cyclomatic Complexity: 2.29, Worst Rank: B Low complexity \u2013 stable and structured."
+      },
+      "Comment Density": {
+        "status": "fail",
+        "density": 12.093023255813954,
+        "message": "Comment Density: 12.09% Low comment density \u2013 consider adding more documentation."
+      }
+    }
+  }
+}
